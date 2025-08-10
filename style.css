@@ -1,0 +1,232 @@
+/* Card Container Layout */
+.card-container {
+  display: flex;
+  gap: 20px; /* space between cards */
+  justify-content: center;
+  flex-wrap: wrap; /* allow wrapping to next line */
+  padding: 20px;
+}
+
+/* Page Background and Fonts */
+body {
+  background-color: #dedd9d;
+  font-family: Arial, sans-serif;
+}
+
+/* Individual Card Design */
+.card {
+  width: 200px;
+  height: 300px;
+  border-radius: 15px;
+  background-color: #c30f63;
+  border: 5px solid rgb(218, 210, 210);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* Card Image */
+.card-img-top {
+  width: 100%;
+  aspect-ratio: 5 / 3;
+  object-fit: cover;
+  background-color: white;
+}
+
+/* Card Text */
+.card-text {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  padding: 0 10px;
+}
+
+/* Start Test Button */
+.button1 {
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #fbff00;
+  color: black;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 10px auto;
+  display: block;
+  border: none;
+}
+
+/* Button Hover Effect */
+.button1:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: #d5d733;
+}
+
+/* Header Intro Section */
+.intro {
+  width: 100%;
+  height: 150px;
+  background-color: #1d8333;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* Popup Overlay */
+.popup {
+  display: none; /* hidden by default */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6); /* darker semi-transparent background */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Popup Content Box */
+.popup-content {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Close Button */
+.popup-content .close {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Rules Heading */
+.popup-content h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Rules List */
+.popup-content ul {
+  text-align: left;
+  padding-left: 20px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Start Button inside Popup */
+.popup-content button {
+  padding: 10px 25px;
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-content button:hover {
+  background-color: #0056b3;
+}
+#quiz-container {
+  display: block;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  position: relative;
+}
+#options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+#next-btn{
+  margin-left: 500px;
+  margin-top: 20px;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 9px;
+  width: 100px;
+}
+#progress-container {
+  margin-bottom: 20px;
+}
+/* Progress Result Style */
+.result-container {
+  text-align: center;
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.progress-outer {
+  width: 80%;
+  height: 30px;
+  background: #e0e0e0;
+  border-radius: 25px;
+  margin: 20px auto;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.progress-inner {
+  height: 100%;
+  background: linear-gradient(90deg, #4caf50, #81c784);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 25px;
+  transition: width 1s ease-in-out;
+}
+
+/* Go to Home Button */
+.home-btn {
+  margin-top: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home-btn:hover {
+  background-color: #0056b3;
+}
